@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:myshop/home.dart';
-import 'package:myshop/ui/giohang/Quan_Ly_Gio.dart';
-import 'package:myshop/ui/donhang/Them_Don_Hang.dart';
-import 'package:myshop/ui/sanpham/edit_product_screen.dart';
+import 'package:myshop/book/giohang/Quan_Ly_Gio.dart';
+import 'package:myshop/book/donhang/Them_Don_Hang.dart';
+import 'package:myshop/book/sanpham/edit_product_screen.dart';
 import 'package:provider/provider.dart';
-import 'ui/sanpham/Chi_Tiet_San_Pham.dart';
-import 'ui/sanpham/Quan_Ly_SP.dart';
-import 'ui/sanpham/Hien_Thi_Tong_Quan_SP.dart';
-import 'ui/sanpham/Chinh_Sua_San_Pham.dart';
-import 'ui/giohang/Hien_Thi_Gio.dart';
-import 'ui/donhang/Hien_Thi_Don.dart';
+import 'book/sanpham/Chi_Tiet_San_Pham.dart';
+import 'book/sanpham/Quan_Ly_SP.dart';
+import 'book/sanpham/Hien_Thi_Tong_Quan_SP.dart';
+import 'book/sanpham/Chinh_Sua_San_Pham.dart';
+import 'book/giohang/Hien_Thi_Gio.dart';
+import 'book/donhang/Hien_Thi_Don.dart';
 
-import 'ui/screens.dart';
+import 'book/screens.dart';
 
 Future<void> main() async {
   await dotenv.load();

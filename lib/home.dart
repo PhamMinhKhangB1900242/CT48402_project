@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:myshop/ui/auth/auth_manager.dart';
-import 'package:myshop/ui/giohang/Quan_Ly_Gio.dart';
-import 'package:myshop/ui/giohang/Hien_Thi_Gio.dart';
-import 'package:myshop/ui/donhang/Hien_Thi_Don.dart';
-import 'package:myshop/ui/sanpham/Danh_Muc.dart';
-import 'package:myshop/ui/sanpham/edit_product_screen.dart';
-import 'package:myshop/ui/sanpham/Hien_Thi_Tong_Quan_SP.dart';
-import 'package:myshop/ui/sanpham/Khung_San_Pham.dart';
-import 'package:myshop/ui/sanpham/Quan_Ly_SP.dart';
-import 'package:myshop/ui/sanpham/Chinh_Sua_San_Pham.dart';
-import 'package:myshop/ui/shared/app_drawer.dart';
+import 'package:myshop/book/auth/auth_manager.dart';
+import 'package:myshop/book/giohang/Quan_Ly_Gio.dart';
+import 'package:myshop/book/giohang/Hien_Thi_Gio.dart';
+import 'package:myshop/book/donhang/Hien_Thi_Don.dart';
+import 'package:myshop/book/sanpham/Danh_Muc.dart';
+import 'package:myshop/book/sanpham/edit_product_screen.dart';
+import 'package:myshop/book/sanpham/Hien_Thi_Tong_Quan_SP.dart';
+import 'package:myshop/book/sanpham/Khung_San_Pham.dart';
+import 'package:myshop/book/sanpham/Quan_Ly_SP.dart';
+import 'package:myshop/book/sanpham/Chinh_Sua_San_Pham.dart';
+import 'package:myshop/book/shared/app_drawer.dart';
 import 'package:provider/provider.dart';
-import 'ui/shared/app_drawer.dart';
-import 'ui/sanpham/Khung_San_Pham.dart';
-import 'ui/giohang/Quan_Ly_Gio.dart';
-import 'ui/sanpham/top_right_badge.dart';
+import 'book/shared/app_drawer.dart';
+import 'book/sanpham/Khung_San_Pham.dart';
+import 'book/giohang/Quan_Ly_Gio.dart';
+import 'book/sanpham/top_right_badge.dart';
 
 enum FilterOptions { favorites, all }
 

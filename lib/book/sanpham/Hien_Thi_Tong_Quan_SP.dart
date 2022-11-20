@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:myshop/ui/giohang/Hien_Thi_Gio.dart';
-import 'package:myshop/ui/sanpham/Quan_Ly_SP.dart';
+import 'package:myshop/book/giohang/Hien_Thi_Gio.dart';
+import 'package:myshop/book/sanpham/Quan_Ly_SP.dart';
 import 'package:provider/provider.dart';
 import '../shared/app_drawer.dart';
 import 'Khung_San_Pham.dart';

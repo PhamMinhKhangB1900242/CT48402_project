@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myshop/ui/giohang/Quan_Ly_Gio.dart';
+import 'package:myshop/book/giohang/Quan_Ly_Gio.dart';
 import 'package:provider/provider.dart';
 import '../../models/product.dart';
 import '../sanpham/Them_Hoan_Tac_SP.dart';
