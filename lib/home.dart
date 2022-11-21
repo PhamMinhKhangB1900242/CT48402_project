@@ -46,199 +46,208 @@ class _home extends State<home> {
             'BOOK SHOP',
           ),
         ),
-        body: GridView.count(
-          primary: false,
-          padding: const EdgeInsets.all(20),
-          crossAxisSpacing: 10,
-          mainAxisSpacing: 10,
-          crossAxisCount: 2,
-          children: <Widget>[
-            GridTile(
-              child: GestureDetector(
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (ctx) => ProductsOverviewScreen(),
+        body: Container(
+          child: GridView.count(
+            primary: false,
+            padding: const EdgeInsets.all(20),
+            crossAxisSpacing: 10,
+            mainAxisSpacing: 10,
+            crossAxisCount: 2,
+            children: <Widget>[
+              GridTile(
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (ctx) => ProductsOverviewScreen(),
+                      ),
+                    );
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Colors.deepPurple,
                     ),
-                  );
-                },
-                child: Container(
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Colors.blue),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: const [
-                      Icon(
-                        Icons.favorite,
-                        color: Colors.pink,
-                        size: 24.0,
-                      ),
-                      Text(
-                        'Sản Phẩm',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 25,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Icon(
+                          Icons.favorite,
+                          color: Colors.blueAccent,
+                          size: 50,
                         ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            GridTile(
-              child: GestureDetector(
-                onTap: () {
-                  Navigator.of(context).pushNamed(
-                    EditProductScreen.routeName,
-                  );
-                },
-                child: Container(
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Colors.blue),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: const [
-                      Icon(
-                        Icons.add_box,
-                        color: Colors.pink,
-                        size: 24.0,
-                      ),
-                      Text(
-                        'Thêm Sản Phẩm',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 25,
+                        Text(
+                          'Sản Phẩm',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 25,
+                          ),
                         ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            GridTile(
-              child: GestureDetector(
-                onTap: () {
-                  Navigator.of(context).pushNamed(CartScreen.routeName);
-                },
-                child: Container(
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Colors.blue),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: const [
-                      Icon(
-                        Icons.shopping_cart,
-                        color: Colors.pink,
-                        size: 24.0,
-                      ),
-                      Text(
-                        'Giỏ Hàng',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 25,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            GridTile(
-              child: GestureDetector(
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (ctx) => ListTileSelectExample(),
+                      ],
                     ),
-                  );
-                },
-                child: Container(
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Colors.blue),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: const [
-                      Icon(
-                        Icons.article,
-                        color: Colors.pink,
-                        size: 24.0,
-                      ),
-                      Text(
-                        'Danh Mục ',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 25,
-                        ),
-                      ),
-                    ],
                   ),
                 ),
               ),
-            ),
-            GridTile(
-              child: GestureDetector(
-                onTap: () {
-                  Navigator.of(context).pushNamed(UserProductsScreen.routeName);
-                },
-                child: Container(
-                  decoration: BoxDecoration(
+              GridTile(
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).pushNamed(
+                      EditProductScreen.routeName,
+                    );
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
-                      color: Colors.blue),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: const [
-                      Icon(
-                        Icons.edit,
-                        color: Colors.pink,
-                        size: 24.0,
-                      ),
-                      Text(
-                        'Sửa Xoá Sản Phẩm ',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 25,
+                      color: Colors.deepPurple,
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Icon(
+                          Icons.add_box,
+                          color: Colors.blueAccent,
+                          size: 50,
                         ),
-                      ),
-                    ],
+                        Text(
+                          'Thêm Sản Phẩm',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 25,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
-            ),
-            GridTile(
-              child: GestureDetector(
-                onTap: () {
-                  Navigator.of(context).pushNamed(OrderScreen.routeName);
-                },
-                child: Container(
-                  decoration: BoxDecoration(
+              GridTile(
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).pushNamed(CartScreen.routeName);
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
-                      color: Colors.blue),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: const [
-                      Icon(
-                        Icons.other_houses,
-                        color: Colors.pink,
-                        size: 24.0,
-                      ),
-                      Text(
-                        'Đơn Hàng',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 25,
+                      color: Colors.deepPurple,
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Icon(
+                          Icons.shopping_cart,
+                          color: Colors.blueAccent,
+                          size: 50,
                         ),
-                      ),
-                    ],
+                        Text(
+                          'Giỏ Hàng',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 25,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
-            ),
-          ],
+              GridTile(
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (ctx) => ListTileSelectExample(),
+                      ),
+                    );
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Colors.deepPurple,
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Icon(
+                          Icons.article,
+                          color: Colors.blueAccent,
+                          size: 50,
+                        ),
+                        Text(
+                          'Danh Mục ',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 25,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              GridTile(
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.of(context)
+                        .pushNamed(UserProductsScreen.routeName);
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Colors.deepPurple,
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Icon(
+                          Icons.edit,
+                          color: Colors.blueAccent,
+                          size: 50,
+                        ),
+                        Text(
+                          'Sửa Xoá Sản Phẩm ',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 25,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              GridTile(
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).pushNamed(OrderScreen.routeName);
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Colors.deepPurple,
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Icon(
+                          Icons.other_houses_sharp,
+                          color: Colors.blueAccent,
+                          size: 50,
+                        ),
+                        Text(
+                          'Đơn Hàng',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 25,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
         ));
   }
 

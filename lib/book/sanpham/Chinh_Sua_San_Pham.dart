@@ -22,19 +22,21 @@ class UserProductsScreen extends StatelessWidget {
           // buildAddButton(context),
         ],
       ),
-      body: FutureBuilder(
-        future: _refreshProducts(context),
-        builder: (ctx, snapshot) {
-          if (snapshot.connectionState == ConnectionState.waiting) {
-            return const Center(
-              child: CircularProgressIndicator(),
+      body: Container(
+        child: FutureBuilder(
+          future: _refreshProducts(context),
+          builder: (ctx, snapshot) {
+            if (snapshot.connectionState == ConnectionState.waiting) {
+              return const Center(
+                child: CircularProgressIndicator(),
+              );
+            }
+            return RefreshIndicator(
+              onRefresh: () => _refreshProducts(context),
+              child: buildUserProductListView(),
             );
-          }
-          return RefreshIndicator(
-            onRefresh: () => _refreshProducts(context),
-            child: buildUserProductListView(),
-          );
-        },
+          },
+        ),
       ),
     );
   }

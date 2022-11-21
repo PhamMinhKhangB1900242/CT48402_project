@@ -14,13 +14,15 @@ class OrderScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Đơn Hàng'),
       ),
-      body: Consumer<OrdersManager>(
-        builder: (ctx, ordersManager, child) {
-          return ListView.builder(
-            itemCount: ordersManager.orderCount,
-            itemBuilder: (ctx, i) => OrderItemCard(ordersManager.orders[i]),
-          );
-        },
+      body: Container(
+        child: Consumer<OrdersManager>(
+          builder: (ctx, ordersManager, child) {
+            return ListView.builder(
+              itemCount: ordersManager.orderCount,
+              itemBuilder: (ctx, i) => OrderItemCard(ordersManager.orders[i]),
+            );
+          },
+        ),
       ),
     );
   }

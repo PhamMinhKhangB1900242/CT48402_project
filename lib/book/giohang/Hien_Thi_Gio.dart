@@ -16,15 +16,17 @@ class CartScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Giỏ Hàng'),
       ),
-      body: Column(
-        children: <Widget>[
-          buildCartSummary(cart, context),
-          buildCartBut(cart, context),
-          const SizedBox(height: 10),
-          Expanded(
-            child: buildCartDetails(cart),
-          ),
-        ],
+      body: Container(
+        child: Column(
+          children: <Widget>[
+            buildCartSummary(cart, context),
+            buildCartBut(cart, context),
+            const SizedBox(height: 10),
+            Expanded(
+              child: buildCartDetails(cart),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -44,6 +46,7 @@ class CartScreen extends StatelessWidget {
 
   Widget buildCartSummary(CartManager cart, BuildContext context) {
     return Card(
+      color: Colors.lightBlueAccent,
       margin: const EdgeInsets.all(15),
       child: Padding(
         padding: const EdgeInsets.all(8),

@@ -17,22 +17,24 @@ class ListTileSelectExampleState extends State<ListTileSelectExample> {
           'Danh Mục',
         ),
       ),
-      body: Center(
-        child: ListView(
-          children: const [
-            ListTile(
-              leading: Icon(Icons.history_edu_rounded),
-              title: Text('Lịch Sử'),
-            ),
-            ListTile(
-              leading: Icon(Icons.gamepad),
-              title: Text('Giải Trí'),
-            ),
-            ListTile(
-              leading: Icon(Icons.psychology),
-              title: Text('Tâm lý'),
-            )
-          ],
+      body: Container(
+        child: Center(
+          child: ListView(
+            children: const [
+              ListTile(
+                leading: Icon(Icons.history_edu_rounded),
+                title: Text('Lịch Sử'),
+              ),
+              ListTile(
+                leading: Icon(Icons.gamepad),
+                title: Text('Giải Trí'),
+              ),
+              ListTile(
+                leading: Icon(Icons.psychology),
+                title: Text('Tâm lý'),
+              )
+            ],
+          ),
         ),
       ),
     );
